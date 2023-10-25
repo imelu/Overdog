@@ -1,0 +1,51 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerIdleState : PlayerBaseState
+{
+    public PlayerIdleState(PlayerStateManager currentContext, PlayerStateFactory factory) : base(currentContext, factory)
+    {
+    }
+
+    public override void EnterState()
+    {
+        //Debug.Log("player idle");
+    }
+
+    public override void UpdateState()
+    {
+        CheckSwitchState();
+    }
+
+    public override void FixedUpdateState()
+    {
+
+    }
+    public override void OnCollisionEnter(Collision col)
+    {
+
+    }
+
+    public override void OnTriggerEnter(Collider col)
+    {
+    }
+
+    public override void ExitState()
+    {
+    }
+
+    public override void CheckSwitchState()
+    {
+        if (Ctx.possessAim) SwitchState(Factory.PossessAim());
+        if (Ctx.corruptAim) SwitchState(Factory.CorruptAim());
+        if (Ctx.attackAim) SwitchState(Factory.AttackAim());
+        if (Ctx.movePlayer) SwitchState(Factory.Walk());
+    }
+
+    public override string ReturnStateName()
+    {
+        string value = "Idle";
+        return value;
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e74c9525-297c-4274-a74d-42cbd63bbd2c}">
+		<property name="assetPath">
+			<value>OVERDOG_Level 1_Airport_1.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>110</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c8e8e49-71cd-4059-8f70-5e83983bd131}</destination>
+		</relationship>
+	</object>
+</objects>

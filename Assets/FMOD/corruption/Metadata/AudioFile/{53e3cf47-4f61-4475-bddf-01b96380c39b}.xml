@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{53e3cf47-4f61-4475-bddf-01b96380c39b}">
+		<property name="assetPath">
+			<value>CloseDoor.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.66822916666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c8e8e49-71cd-4059-8f70-5e83983bd131}</destination>
+		</relationship>
+	</object>
+</objects>
